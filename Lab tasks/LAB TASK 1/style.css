@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	padding: 0px 100px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+#sidebar {
+	background-color: #48afff;
+	color: #ffff;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	padding: 0px 30px;
+}
+#sidebar h1 {
+	font-size: 1.2em;
+}
+#sidebar img {
+	padding: 40px;
+	height: 300px;
+}
+#sidebar p {
+	padding: 30px 0px;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	background-color: lightgray;
+	padding: 50px;
+	padding-left: 100px;
+}
+#certification {
+	text-align: left;
+}
+#skills {
+	text-align: left;
+}
+#hobbies {
+	text-align: left;
+}
