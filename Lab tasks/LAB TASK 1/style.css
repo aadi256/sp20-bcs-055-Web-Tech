@@ -2,49 +2,115 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
-	padding: 0px 100px;
 	height: 100%;
-	position: absolute;
-	top: 0;
+	/* position: absolute;
+	top: 0; */
+	margin: 100px;
+	background-color: #d7d7d7;
 }
-#sidebar {
-	background-color: #48afff;
-	color: #ffff;
+#left {
+	/* background-color: #fecb00; */
+	background-color: #212026;
+	color: #e0e0e2;
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
-	padding: 0px 30px;
+	/* padding-left: 40px; */
 }
-#sidebar h1 {
-	font-size: 1.2em;
+img {
+	height: auto;
+	width: 100%;
+	margin-bottom: 30px;
 }
-#sidebar img {
-	padding: 40px;
-	height: 300px;
+#left p {
+	padding-right: 20px;
 }
-#sidebar p {
-	padding: 30px 0px;
+#left-bottom-content {
+	padding-bottom: 30px;
+}
+#left-bottom {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	background-color: #2c2c2c;
+	padding: 3px;
+}
+#left-bottom > p {
+	padding-left: 20px;
+}
+#left-bottom-content > p {
+	padding: 7px 0px 5px 80px;
+}
+#yellow {
+	background-color: #fecb00;
+	height: 100%;
+}
+#left h3 {
+	border-bottom: 1px solid #fecb00;
+	margin-left: 30px;
+	padding-bottom: 7px;
+}
+#info {
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+}
+#info p {
+	padding-bottom: 10px;
 }
 
-#main {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	height: 100%;
-	background-color: lightgray;
+#right {
+	background-color: #ffff;
+}
+#heading #light-bold {
+	font-weight: normal;
+}
+#heading {
+	margin-top: 100px;
+	padding: 40px;
+	background-color: #fecb00;
+	color: #212026;
+	font-size: 1.1em;
+}
+#container {
 	padding: 50px;
-	padding-left: 100px;
 }
-#certification {
-	text-align: left;
+#container h2 {
+	border-bottom: 2px solid #fecb00;
+	padding-bottom: 12px;
+	color: #212026;
 }
-#skills {
-	text-align: left;
+#container > p {
+	padding: 15px 0px 35px 0px;
 }
-#hobbies {
-	text-align: left;
+#experience {
+	padding-bottom: 35px;
+}
+#exper {
+	padding: 15px 0px 0px 0px;
+	font-size: 1.1em;
+}
+#skill {
+	padding: 40px 0px 35px 35px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: #2c2c2c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #fecb00;
+	/* border-radius: 10px; */
 }
