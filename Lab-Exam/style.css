@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Lato", sans-serif;
+	line-height: 1.5;
+}
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+ul {
+	list-style: none;
+}
+img {
+	width: 100%;
+}
+input {
+	border: none;
+}
+
+h6 {
+	font-size: 1.3em;
+	border-bottom: 2px solid rgb(189, 26, 26);
+}
+
+#darkmode {
+	padding: 5px;
+}
+
+#navbar {
+	color: aliceblue;
+	background-color: #333;
+	display: flex;
+	padding: 10px;
+	font-weight: bold;
+	justify-content: space-between;
+	box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#navbar #left-content {
+	text-align: left;
+	padding-left: 50px;
+	display: flex;
+}
+#navbar #right-content {
+	text-align: right;
+	padding-right: 50px;
+}
+#navbar #icons {
+	margin-left: 20px;
+}
+#navbar a {
+	color: aliceblue;
+}
+#navbar a:hover {
+	background-color: black;
+	padding: 10px;
+}
+
+#logo img {
+	width: 250px;
+	height: 51px;
+	margin-bottom: 5px;
+}
+#logo {
+	text-align: center;
+	align-items: center;
+	border-bottom: 3px solid black;
+	padding: 10px 0px;
+	font-size: 0.8em;
+	font-weight: bolder;
+	/* margin-left: 50px;
+	margin-right: 50px; */
+}
+.container {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#menu {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #cec5c5;
+}
+#menu a {
+	padding: 10px;
+	font-size: 1.1em;
+	font-weight: lighter;
+}
+#menu a:hover {
+	border-bottom: 1px solid rgb(199, 33, 47);
+	background-color: #e6dddd;
+}
+
+#main-content {
+	display: grid;
+	grid-template-columns: 3fr 2fr 2fr;
+	grid-gap: 2rem;
+}
+
+#main-content #left .big-card img {
+	width: 100%;
+	display: block;
+	height: 225px;
+}
+.big-card {
+	border: 1px solid rgb(204, 199, 199);
+	margin-bottom: 20px;
+}
+
+#main-content #mid #small-card {
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	border-bottom: 1px solid rgb(196, 194, 194);
+}
+#main-content #mid #small-card img {
+	width: 120px;
+	display: block;
+	height: 67px;
+	margin-right: 10px;
+}
+
+#main-content #right #mid-card {
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	border-bottom: 1px solid rgb(196, 194, 194);
+}
+
+#main-content #right #mid-card img {
+	width: 113px;
+	display: block;
+	height: 63px;
+	margin-right: 10px;
+}
+
+#main-content #right {
+	background-color: #cec5c5;
+}
