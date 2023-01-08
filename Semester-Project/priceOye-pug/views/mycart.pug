@@ -1,0 +1,32 @@
+extends layout
+
+block content
+
+  -var total=0;
+  .row 
+    .col-sm-8
+      h1 My Cart 
+    //- .col-sm-4 
+    //-   a(href="/products/add", class="btn btn-success") Add New Product
+  table.table 
+    thead 
+      tr 
+        th Name
+        th Price
+        th Actions
+    tbody 
+      each item in cart
+        tr 
+          - total += Number(item.price)
+          td=item.name 
+          td=item.price 
+          td 
+            a(href='products/mycart/delete/'+item._id, class="btn btn-danger" ) Remove Item 
+          //- td 
+          //-   a(href='/products/edit/'+product._id, class="btn btn-warning" ) Edit
+          //- td 
+          //-   a(href='/products/mycart/'+product._id, class="btn btn-info" ) Add to Cart
+    tfoot 
+      tr 
+        td Total 
+        td=total

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg px-3 bg-primary mb-4" data-bs-theme="dark">
+  .container 
+    <a class="navbar-brand " href="/"><img src="https://static.priceoye.pk/images/logo.svg" width='50%' height='70%' /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-3">
+      <li class="nav-item mr-3 ">
+        <a class="nav-link link-light " href="/">Home </a>
+      </li>
+      <li class="nav-item mr-3">
+        <a class="nav-link link-light " href="/products">Products</a>
+      </li>
+      <li class="nav-item mr-3">
+        <a class="nav-link link-light " href="/mycart">My Cart</a>
+      </li>
+      if !user
+        <li class="nav-item mr-3 ">
+          <a class="nav-link link-light " href="/users/register">Register</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link link-light " href="/users/login">Login</a>
+        </li>
+      if user
+        <li class="nav-item mr-3">
+          <a class="nav-link link-light " href="/users/logout">Logout</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+

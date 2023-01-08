@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 Mobile Phones
+  each product in products
+    <div class='d-inline-flex p-2' > 
+      <div class="card" style="width: 18rem;">
+        <img src="https://images.priceoye.pk/infinix-note-12-vip-pakistan-priceoye-17e3z-270x270.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          h5=product.name
+          <div class='d-inline-flex align-items-baseline justify-content-around ' >
+            <h6>PKR </h6> 
+            p= product.price
+          </div>  
+          <div class='d-inline-flex p-2 justify-content-between' >
+            a(href='/products/delete/'+product._id, class="btn btn-danger mr-1" ) Delete 
+            a(href='/products/edit/'+product._id, class="btn btn-warning mr-1" ) Edit
+            a(href='/products/mycart/'+product._id, class="btn btn-info mr-1" ) Add to Cart
+          </div>
+        </div>
+      </div>
+    </div> 
+

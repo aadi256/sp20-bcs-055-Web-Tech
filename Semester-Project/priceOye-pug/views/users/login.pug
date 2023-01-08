@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Login Here
+  form(action='/users/login',method='post')
+    .form-group.mb-2  
+      label(for="email") Email
+      input#name(type='text',class='form-control', name='email')
+    .form-group.mb-2   
+      label(for="password") Password
+      input#price(type='password',class='form-control', name='password')
+    input(type="submit",class="btn btn-info", value='login')    

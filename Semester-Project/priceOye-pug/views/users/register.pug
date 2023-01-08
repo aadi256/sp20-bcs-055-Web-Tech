@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1 Register Here
+  form(action='/users/register',method='post')
+    .form-group.mb-2  
+      label(for="name") Name
+      input#name(type='text',class='form-control', name='name')
+    .form-group.mb-2  
+      label(for="email") Email
+      input#name(type='text',class='form-control', name='email')
+    .form-group.mb-2   
+      label(for="password") Password
+      input#price(type='password',class='form-control', name='password')
+    input(type="submit",class="btn btn-info", value='register')    
